@@ -57,8 +57,6 @@
 		EB2421CF26E92748001DC534 = {
 			isa = PBXGroup;
 			children = (
-				EB2421F326E9275C001DC534 /* FeedItem.swift */,
-				EB2421F526E92926001DC534 /* FeedLoader.swift */,
 				EB2421DB26E92749001DC534 /* EssentialFeed */,
 				EB2421E626E92749001DC534 /* EssentialFeedTests */,
 				EB2421DA26E92749001DC534 /* Products */,
@@ -77,6 +75,7 @@
 		EB2421DB26E92749001DC534 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				EB2421F726E92A2C001DC534 /* Feed Feature */,
 				EB2421DC26E92749001DC534 /* EssentialFeed.h */,
 				EB2421DD26E92749001DC534 /* Info.plist */,
 			);
@@ -90,6 +89,15 @@
 				EB2421E926E92749001DC534 /* Info.plist */,
 			);
 			path = EssentialFeedTests;
+			sourceTree = "<group>";
+		};
+		EB2421F726E92A2C001DC534 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EB2421F326E9275C001DC534 /* FeedItem.swift */,
+				EB2421F526E92926001DC534 /* FeedLoader.swift */,
+			);
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
