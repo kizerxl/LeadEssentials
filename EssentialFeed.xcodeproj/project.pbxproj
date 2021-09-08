@@ -10,6 +10,7 @@
 		EB2421E326E92749001DC534 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2421D926E92749001DC534 /* EssentialFeed.framework */; };
 		EB2421E826E92749001DC534 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2421E726E92749001DC534 /* EssentialFeedTests.swift */; };
 		EB2421EA26E92749001DC534 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2421DC26E92749001DC534 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2421F426E9275C001DC534 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2421F326E9275C001DC534 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EB2421E226E92749001DC534 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2421E726E92749001DC534 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		EB2421E926E92749001DC534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2421F326E9275C001DC534 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		EB2421CF26E92748001DC534 = {
 			isa = PBXGroup;
 			children = (
+				EB2421F326E9275C001DC534 /* FeedItem.swift */,
 				EB2421DB26E92749001DC534 /* EssentialFeed */,
 				EB2421E626E92749001DC534 /* EssentialFeedTests */,
 				EB2421DA26E92749001DC534 /* Products */,
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					EB2421D826E92748001DC534 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					EB2421E126E92749001DC534 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2421F426E9275C001DC534 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		EB2421EE26E92749001DC534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leaddeveloper.EssentialFeed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		EB2421EF26E92749001DC534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		EB2421F126E92749001DC534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T6W38YLN79;
@@ -406,6 +415,7 @@
 		EB2421F226E92749001DC534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T6W38YLN79;
