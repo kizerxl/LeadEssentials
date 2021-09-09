@@ -5,21 +5,27 @@
 //  Created by Felix Changoo on 9/8/21.
 //
 
-class RemoteFeedLoader {
+public final class RemoteFeedLoader {
     private let url: URL
     private let client: HTTPClient
     
-    public init(url: URL, client: HTTPClient) {
+    public enum Error: Swift.Error {
+        case connectivity
+    }
+    
+    init(url: URL, client: HTTPClient) {
         self.url = url
         self.client = client
     }
     
-    public func load() {
-        client.get(from: url)
+    public func load(completion: @escaping (Error) -> Void = { _ in }) {
+        client.get(from: url) { error in
+            completion(.connectivity)
+        }
     }
 }
 
 protocol HTTPClient {
-    func get(from url: URL)
+    func get(from url: URL, completion: @escaping (Error) -> Void)
 }
 
