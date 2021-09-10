@@ -15,6 +15,7 @@
 		EB2421FB26E92E40001DC534 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2421FA26E92E40001DC534 /* RemoteFeedLoaderTests.swift */; };
 		EB2421FE26E952AD001DC534 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2421FD26E952AD001DC534 /* RemoteFeedLoader.swift */; };
 		EB52B44526EC032100C42BCC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52B44426EC032100C42BCC /* HTTPClient.swift */; };
+		EB52B44726EC03CB00C42BCC /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52B44626EC03CB00C42BCC /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		EB2421FA26E92E40001DC534 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		EB2421FD26E952AD001DC534 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		EB52B44426EC032100C42BCC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EB52B44626EC03CB00C42BCC /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				EB2421FD26E952AD001DC534 /* RemoteFeedLoader.swift */,
 				EB52B44426EC032100C42BCC /* HTTPClient.swift */,
+				EB52B44626EC03CB00C42BCC /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52B44726EC03CB00C42BCC /* FeedItemsMapper.swift in Sources */,
 				EB2421F626E92926001DC534 /* FeedLoader.swift in Sources */,
 				EB2421FE26E952AD001DC534 /* RemoteFeedLoader.swift in Sources */,
 				EB52B44526EC032100C42BCC /* HTTPClient.swift in Sources */,
