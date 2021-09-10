@@ -5,11 +5,6 @@
 //  Created by Felix Changoo on 9/8/21.
 //
 
-public enum HTTPClientResult {
-    case success(Data, HTTPURLResponse)
-    case failure (Error)
-}
-
 public final class RemoteFeedLoader {
     private let url: URL
     private let client: HTTPClient
@@ -45,10 +40,6 @@ public final class RemoteFeedLoader {
             }
         }
     }
-}
-
-protocol HTTPClient {
-    func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void)
 }
 
 private class FeedItemsMapper {
