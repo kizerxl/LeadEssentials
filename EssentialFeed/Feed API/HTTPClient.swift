@@ -5,7 +5,7 @@
 //  Created by Felix Changoo on 9/10/21.
 //
 
-protocol HTTPClient {
+public protocol HTTPClient {
     func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void)
 }
 
