@@ -15,7 +15,7 @@ public final class RemoteFeedLoader: FeedLoader {
     
     public typealias Result = LoadFeedResult
     
-    init(url: URL, client: HTTPClient) {
+    public init(url: URL, client: HTTPClient) {
         self.url = url
         self.client = client
     }
